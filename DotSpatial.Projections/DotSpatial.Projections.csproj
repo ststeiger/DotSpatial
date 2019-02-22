@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AuthorityCodes\epsg.ds" />
+    <None Remove="Nad\GridShiftsBundled\FL.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\MD.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\null.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\prvi.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\stgeorge.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\stlrnc.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\stpaul.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\TN.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\WI.ds.lla" />
+    <None Remove="Nad\GridShiftsBundled\WO.ds.lla" />
+    <None Remove="XML\datums.xml.ds" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="AuthorityCodes\epsg.ds" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\FL.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\MD.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\null.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\prvi.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\stgeorge.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\stlrnc.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\stpaul.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\TN.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\WI.ds.lla" />
+    <EmbeddedResource Include="Nad\GridShiftsBundled\WO.ds.lla" />
+    <EmbeddedResource Include="XML\datums.xml.ds" />
+  </ItemGroup>
+
+</Project>
