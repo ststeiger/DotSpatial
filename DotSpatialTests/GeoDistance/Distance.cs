@@ -10,6 +10,53 @@ namespace DotSpatialTests
 
 
 
+        private const double FEET_PER_METER = 3.2808399;
+        private const double FEET_PER_CENTIMETER = 0.032808399;
+        private const double FEET_PER_STATUTE_MILE = 5280;
+        private const double FEET_PER_KILOMETER = 3280.8399;
+        private const double FEET_PER_INCH = 0.0833333333333333;
+        private const double FEET_PER_NAUTICAL_MILE = 6076.11549;
+        private const double INCHES_PER_METER = 39.3700787;
+        private const double INCHES_PER_CENTIMETER = 0.393700787;
+        private const double INCHES_PER_STATUTE_MILE = 63360;
+        private const double INCHES_PER_KILOMETER = 39370.0787;
+        private const double INCHES_PER_FOOT = 12.0;
+        private const double INCHES_PER_NAUTICAL_MILE = 72913.3858;
+        private const double STATUTE_MILES_PER_METER = 0.000621371192;
+        private const double STATUTE_MILES_PER_CENTIMETER = 0.00000621371192;
+        private const double STATUTE_MILES_PER_KILOMETER = 0.621371192;
+        private const double STATUTE_MILES_PER_INCH = 0.0000157828283;
+        private const double STATUTE_MILES_PER_FOOT = 0.000189393939;
+        private const double STATUTE_MILES_PER_NAUTICAL_MILE = 1.15077945;
+        private const double NAUTICAL_MILES_PER_METER = 0.000539956803;
+        private const double NAUTICAL_MILES_PER_CENTIMETER = 0.00000539956803;
+        private const double NAUTICAL_MILES_PER_KILOMETER = 0.539956803;
+        private const double NAUTICAL_MILES_PER_INCH = 0.0000137149028;
+        private const double NAUTICAL_MILES_PER_FOOT = 0.000164578834;
+        private const double NAUTICAL_MILES_PER_STATUTE_MILE = 0.868976242;
+        private const double CENTIMETERS_PER_STATUTE_MILE = 160934.4;
+        private const double CENTIMETERS_PER_KILOMETER = 100000;
+        private const double CENTIMETERS_PER_FOOT = 30.48;
+        private const double CENTIMETERS_PER_INCH = 2.54;
+        private const double CENTIMETERS_PER_METER = 100;
+        private const double CENTIMETERS_PER_NAUTICAL_MILE = 185200;
+        private const double METERS_PER_STATUTE_MILE = 1609.344;
+        private const double METERS_PER_CENTIMETER = 0.01;
+        private const double METERS_PER_KILOMETER = 1000;
+        private const double METERS_PER_FOOT = 0.3048;
+        private const double METERS_PER_INCH = 0.0254;
+        private const double METERS_PER_NAUTICAL_MILE = 1852;
+        private const double KILOMETERS_PER_METER = 0.001;
+        private const double KILOMETERS_PER_CENTIMETER = 0.00001;
+        private const double KILOMETERS_PER_STATUTE_MILE = 1.609344;
+        private const double KILOMETERS_PER_FOOT = 0.0003048;
+        private const double KILOMETERS_PER_INCH = 0.0000254;
+        private const double KILOMETERS_PER_NAUTICAL_MILE = 1.852;
+        
+
+        public static readonly Distance Empty = new Distance(0, DistanceUnit.Meters).ToLocalUnitType();
+
+
         public DistanceUnit Units
         {
             get
@@ -266,180 +313,6 @@ namespace DotSpatialTests
             return new Speed(ToMeters().Value / (time.TotalMilliseconds / 1000.0), SpeedUnit.MetersPerSecond).ToLocalUnitType();
         }
 
-
-        /// <summary>
-        ///
-        /// </summary>
-        private const double FEET_PER_METER = 3.2808399;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double FEET_PER_CENTIMETER = 0.032808399;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double FEET_PER_STATUTE_MILE = 5280;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double FEET_PER_KILOMETER = 3280.8399;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double FEET_PER_INCH = 0.0833333333333333;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double FEET_PER_NAUTICAL_MILE = 6076.11549;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double INCHES_PER_METER = 39.3700787;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double INCHES_PER_CENTIMETER = 0.393700787;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double INCHES_PER_STATUTE_MILE = 63360;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double INCHES_PER_KILOMETER = 39370.0787;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double INCHES_PER_FOOT = 12.0;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double INCHES_PER_NAUTICAL_MILE = 72913.3858;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double STATUTE_MILES_PER_METER = 0.000621371192;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double STATUTE_MILES_PER_CENTIMETER = 0.00000621371192;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double STATUTE_MILES_PER_KILOMETER = 0.621371192;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double STATUTE_MILES_PER_INCH = 0.0000157828283;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double STATUTE_MILES_PER_FOOT = 0.000189393939;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double STATUTE_MILES_PER_NAUTICAL_MILE = 1.15077945;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double NAUTICAL_MILES_PER_METER = 0.000539956803;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double NAUTICAL_MILES_PER_CENTIMETER = 0.00000539956803;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double NAUTICAL_MILES_PER_KILOMETER = 0.539956803;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double NAUTICAL_MILES_PER_INCH = 0.0000137149028;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double NAUTICAL_MILES_PER_FOOT = 0.000164578834;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double NAUTICAL_MILES_PER_STATUTE_MILE = 0.868976242;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double CENTIMETERS_PER_STATUTE_MILE = 160934.4;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double CENTIMETERS_PER_KILOMETER = 100000;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double CENTIMETERS_PER_FOOT = 30.48;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double CENTIMETERS_PER_INCH = 2.54;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double CENTIMETERS_PER_METER = 100;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double CENTIMETERS_PER_NAUTICAL_MILE = 185200;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double METERS_PER_STATUTE_MILE = 1609.344;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double METERS_PER_CENTIMETER = 0.01;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double METERS_PER_KILOMETER = 1000;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double METERS_PER_FOOT = 0.3048;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double METERS_PER_INCH = 0.0254;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double METERS_PER_NAUTICAL_MILE = 1852;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double KILOMETERS_PER_METER = 0.001;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double KILOMETERS_PER_CENTIMETER = 0.00001;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double KILOMETERS_PER_STATUTE_MILE = 1.609344;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double KILOMETERS_PER_FOOT = 0.0003048;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double KILOMETERS_PER_INCH = 0.0000254;
-        /// <summary>
-        ///
-        /// </summary>
-        private const double KILOMETERS_PER_NAUTICAL_MILE = 1.852;
-
-
-
-
-        public static readonly Distance Empty = new Distance(0, DistanceUnit.Meters).ToLocalUnitType();
 
         public Distance ToKilometers()
         {
