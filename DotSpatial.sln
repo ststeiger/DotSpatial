@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotSpatial.Projections", "DotSpatial.Projections\DotSpatial.Projections.csproj", "{567F9B23-365D-4349-8F20-735F7A1222D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotSpatial.Projections", "DotSpatial.Projections\DotSpatial.Projections.csproj", "{567F9B23-365D-4349-8F20-735F7A1222D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotSpatial.Positioning", "DotSpatial.Positioning\DotSpatial.Positioning.csproj", "{B0346E4C-929C-41A2-A4F8-8E705B4E637F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotSpatial.Positioning", "DotSpatial.Positioning\DotSpatial.Positioning.csproj", "{B0346E4C-929C-41A2-A4F8-8E705B4E637F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotSpatial.Serialization", "DotSpatial.Serialization\DotSpatial.Serialization.csproj", "{614D8DB5-5CA6-4B95-A650-BB4A0E5744E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotSpatial.Serialization", "DotSpatial.Serialization\DotSpatial.Serialization.csproj", "{614D8DB5-5CA6-4B95-A650-BB4A0E5744E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotSpatialTests", "DotSpatialTests\DotSpatialTests.csproj", "{55DB1501-8415-4DC6-B7D4-04FECBD96D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{614D8DB5-5CA6-4B95-A650-BB4A0E5744E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{614D8DB5-5CA6-4B95-A650-BB4A0E5744E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{614D8DB5-5CA6-4B95-A650-BB4A0E5744E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DB1501-8415-4DC6-B7D4-04FECBD96D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DB1501-8415-4DC6-B7D4-04FECBD96D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DB1501-8415-4DC6-B7D4-04FECBD96D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DB1501-8415-4DC6-B7D4-04FECBD96D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
