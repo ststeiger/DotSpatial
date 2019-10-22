@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>DotSpatial Projection Library for NetStandard 2.0</Description>
+    <Product>DotSpatial.Projections.NetStandard</Product>
+    <Authors>Stefan Steiger</Authors>
+    <Company>DotSpatial</Company>
+    <Copyright>Stefan Steiger</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://archive.codeplex.com/?p=dotspatial</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ststeiger/DotSpatial</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageId>DotSpatial.Projections.NetStandard</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
