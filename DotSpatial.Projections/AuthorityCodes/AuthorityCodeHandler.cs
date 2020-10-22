@@ -140,6 +140,10 @@ namespace DotSpatial.Projections.AuthorityCodes
             try
             {
                 pi = ProjectionInfo.FromProj4String(proj4String);
+
+                // Removed exception being thrown when projection is not found
+                if (pi.Transform == null)
+                    return;
             }
             catch (ProjectionException)
             {
@@ -147,7 +151,7 @@ namespace DotSpatial.Projections.AuthorityCodes
                 if (proj4String.Contains("+proj=geocent")) return;
                 throw;
             }
-            
+
             pi.Authority = authorityCode.Substring(0, pos);
             pi.AuthorityCode = int.Parse(authorityCode.Substring(pos + 1), CultureInfo.InvariantCulture);
             pi.Name = string.IsNullOrEmpty(name) ? authorityCode : name;

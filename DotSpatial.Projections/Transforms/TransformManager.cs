@@ -15,6 +15,7 @@
 // ********************************************************************************************************
 
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace DotSpatial.Projections.Transforms
 {
@@ -126,7 +127,9 @@ namespace DotSpatial.Projections.Transforms
                     if (prj4Name == name) return transform.Copy();
                 }
             }
-            throw new ProjectionException(37);
+            Trace.WriteLine($"Unrecognized '{name}'");
+            return null;
+            //throw new ProjectionException(37);
         }
 
         /// <summary>
